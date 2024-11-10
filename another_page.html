@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список чего-либо</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #e0f7fa;
+            padding: 10px;
+            text-align: center;
+            border: 1px dashed #000;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .form-container input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .form-container button {
+            padding: 5px 10px;
+            background-color: #ffeb3b;
+            border: none;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .actions button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .actions .edit {
+            background-color: #c5e1a5;
+        }
+        .actions .search {
+            background-color: #b3e5fc;
+        }
+        .actions .delete {
+            background-color: #ef9a9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Список чего-либо</h2>
+        </div>
+        <div class="form-container">
+            <input type="text" placeholder="enter name">
+            <input type="text" placeholder="enter description">
+            <input type="text" placeholder="add info 1">
+            <input type="text" placeholder="info 2">
+            <button>Добавить</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>info 1</th>
+                    <th>info 2</th>
+                    <th>check</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Anya</td>
+                    <td>description</td>
+                    <td>info</td>
+                    <td>info</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Petya</td>
+                    <td>description</td>
+                    <td>info</td>
+                    <td>info</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stepan</td>
+                    <td>description</td>
+                    <td>info</td>
+                    <td>info</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Vova</td>
+                    <td>description</td>
+                    <td>info</td>
+                    <td>info</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="actions">
+            <button class="edit">Редактировать</button>
+            <button class="search">Найти</button>
+            <button class="delete">Удалить</button>
+        </div>
+    </div>
+</body>
+</html>
