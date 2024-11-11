@@ -19,7 +19,7 @@ main {
 .form-container {
      display: grid;
      height: 25px;
-     grid-template-columns: 1fr 1fr 1fr 1fr 100px;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
      gap: 10px;
 }
 
@@ -75,3 +75,6 @@ table tr:nth-child(even) {
     background-color: #ef9a9a;
 }
 
+.input-length { 
+    width: 75px;
+}

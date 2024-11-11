@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<lang="en">
-<head>
+<html lang="en">
+<head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -10,85 +10,88 @@
 <body>
     <main>
         <div class="header">
-            <h2>Список чего-либо</h2>
+            <h2>Pokemon List</h2>
         </div>
 
         <div class="form-container">
-            <input type="text" placeholder="enter name">
-            <input type="text" placeholder="enter description">
-            <input type="text" placeholder="add info 1">
-            <input type="text" placeholder="info 2">
+            <input type="text" class="input-length" id="pokemon" placeholder="Pokemon">
+            <input type="text" class="input-length" id="species" placeholder="Species">
+            <input type="text" class="input-length" id="type" placeholder="Type">
+            <input type="text" class="input-length" id="abilites" placeholder="Abilities">
+            <input type="text" class="input-length" id="hp" placeholder="HP">
+            <input type="text" class="input-length" id="attack" placeholder="Attack">
+            <input type="text" class="input-length" id="defense" placeholder="Defense">
             <button>Add</button>
         </div>
 
-        <div>
-            <table>
-                <thead>          
-                    <tr>
-                        <th>id</th>
-                        <th>Pokemon name</th>
-                        <th>Species</th>
-                        <th>Type</th>
-                        <th>Abilities</th>
-                        <th>HP</th>
-                        <th>Attack</th>
-                        <th>Defense</th>
-                        <th>Image</th>
-                        <th>Select</th>
-                  </tr>
-                </thead>
-                <tbody> 
-                    <tr>
-                        <td>1</td>
-                        <td>Bulbasaur</td>
-                        <td>Seed Pokémon</td>
-                        <td>Grass, Poison</td>
-                        <td>Overgrow</td>
-                        <td>45</td>
-                        <td>49</td>
-                        <td>49</td>
-                        <td><img src="https://img.pokemondb.net/sprites/x-y/normal/bulbasaur.png" alt="bulbasaur"></td>
-                        <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                      <td>2</td>
-                      <td>Ivysaur</td>
-                      <td>Seed Pokémon</td>
-                      <td>Grass, Poison</td>
-                      <td>Overgrow</td>
-                      <td>60</td>
-                      <td>62</td>
-                      <td>63</td>
-                      <td><img src="https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png" alt="bulbasaur"></td>
-                      <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                      <td>3</td>
-                      <td>Venusaur</td>
-                      <td>Seed Pokémon</td>
-                      <td>Grass, Poison</td>
-                      <td>Overgrow</td>
-                      <td>60</td>
-                      <td>62</td>
-                      <td>63</td>
-                      <td><img src="https://img.pokemondb.net/sprites/x-y/normal/venusaur-f.png" alt="bulbasaur"></td>
-                      <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                      <td>4</td>
-                      <td>Charmander</td>
-                      <td>Lizard Pokémon</td>
-                      <td>Fire</td>
-                      <td>Blaze</td>
-                      <td>39</td>
-                      <td>52</td>
-                      <td>43</td>
-                      <td><img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/charmander.png" alt="bulbasaur"></td>
-                      <td><input type="checkbox"></td>
-                  </tr>
-                </tbody>      
-              </table>
-        </div>
+
+        <table>
+            <thead>          
+                <tr>
+                    <th>id</th>
+                    <th>Pokemon name</th>
+                    <th>Species</th>
+                    <th>Type</th>
+                    <th>Abilities</th>
+                    <th>HP</th>
+                    <th>Attack</th>
+                    <th>Defense</th>
+                    <th>Image</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>1</td>
+                    <td>Bulbasaur</td>
+                    <td>Seed Pokémon</td>
+                    <td>Grass, Poison</td>
+                    <td>Overgrow</td>
+                    <td>45</td>
+                    <td>49</td>
+                    <td>49</td>
+                    <td><img src="https://img.pokemondb.net/sprites/x-y/normal/bulbasaur.png" alt="bulbasaur"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ivysaur</td>
+                    <td>Seed Pokémon</td>
+                    <td>Grass, Poison</td>
+                    <td>Overgrow</td>
+                    <td>60</td>
+                    <td>62</td>
+                    <td>63</td>
+                    <td><img src="https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png" alt="bulbasaur"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Venusaur</td>
+                    <td>Seed Pokémon</td>
+                    <td>Grass, Poison</td>
+                    <td>Overgrow</td>
+                    <td>60</td>
+                    <td>62</td>
+                    <td>63</td>
+                    <td><img src="https://img.pokemondb.net/sprites/x-y/normal/venusaur-f.png" alt="bulbasaur"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Charmander</td>
+                    <td>Lizard Pokémon</td>
+                    <td>Fire</td>
+                    <td>Blaze</td>
+                    <td>39</td>
+                    <td>52</td>
+                    <td>43</td>
+                    <td><img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/charmander.png" alt="bulbasaur"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>      
+            </table>
+
        
 
         <div class="actions">
@@ -98,8 +101,7 @@
         </div>
     </main>
 
-
-
+    <script src="script.js"></script>
 </body>
 
 
